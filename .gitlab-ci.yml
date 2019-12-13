@@ -8,7 +8,7 @@ unit-test:
     -projectPath /D:/Github/testing\" \
     -runTests -testPlatform editmode \
     -logFile \
-    -testResults ./unit-tests.xml"
+    -testResults ./unit-tests.xml | Out-Default"
   stage: test
   tags:
     - unity
