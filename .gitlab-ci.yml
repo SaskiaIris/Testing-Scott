@@ -11,7 +11,7 @@ stages:
 unit-test: 
     script: "d\": D:/Program\" Files\"/Unity/Editor/Unity
         -batchmode \
-        -projectPath "/D:/Github\testing" \
+        -projectPath /D:/Github\testing" \
         -runTests \
         -logfile \
         -testResults ./unit-tests.xml"
