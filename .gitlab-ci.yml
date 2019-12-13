@@ -2,23 +2,23 @@ stages:
   - test
   - build
   - deploy
+
 unit-test:
-  script: "D:/Program\" Files\"/Unity/Editor/Unity \
-    -batchmode \
-    -projectPath /D:/Github/testing\" \
-    -runTests -testPlatform editmode \
-    -logFile \
-    -testResults ./unit-tests.xml | Out-Default"
   stage: test
+  script:  
+    - 'cd "D:\Program Files\Unity\Editor\"'
+    - '.\Unity -batchmode -projectPath D:\Github\testing -runTests -testPlatform editmode -logFile -testResults ./unit-tests.xml | Out-Default'
   tags:
     - unity
+
 unity-build:
-  script: "echo 'Building...'"
   stage: build
+  script: echo 'Building...'
   tags:
     - unity
+
 playstore:
-  script: "echo 'Deploying...'"
   stage: deploy
+  script: echo 'Deploying...'
   tags:
     - unity
