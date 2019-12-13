@@ -7,7 +7,7 @@ unit-test:
   stage: test
   script:  
     - 'd:'
-    - 'cd "D:\Program Files\Unity\Editor\" \
+    - 'cd "D:\Program Files\Unity\Editor\"'' \
     - '-batchmode -projectPath D:\Github\testing -runTests -testPlatform editmode -logFile -testResults ./unit-tests.xml | Out-Default'
   tags:
     - unity
