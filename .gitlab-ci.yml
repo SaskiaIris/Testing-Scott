@@ -3,11 +3,11 @@ playstore:
     script: "echo 'Deploying...'"
     stage: deploy
     tags: 
-        -unity
+        - unity
 stages: 
-    -test
-    -build
-    -deploy
+    - test
+    - build
+    - deploy
 unit-test: 
     script:
         -'cd "D:\Program Files\Unity\Editor\"'
@@ -23,9 +23,9 @@ unit-test:
         '
     stage: test
     tags: 
-        -unity
+        - unity
 unity-build: 
     script: "echo 'Building...'"
     stage: build
     tags: 
-        -unity
+        - unity
