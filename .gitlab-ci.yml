@@ -12,7 +12,7 @@ unit-test:
   script:
     -d: cd "C:\Program' Files\Unity\Editor\Unity" \
     -batchmode: \
-    -projectPath: "D:\Github\testing\" \
+    -projectPath: D:\Github\testing\ \
     -runTests: \
     -testPlatform: editmode \
     -logfile: \
