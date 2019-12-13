@@ -6,7 +6,7 @@ stages:
 unit-test:
   stage: test
   script:  
-    -'d/: cd "D:/Program Files/Unity/Editor/Unity" '
+    -'d: cd "D:/Program Files/Unity/Editor/Unity" '
     -'batchmode'
     -'projectPath "/D:/Github/testing/"'
     -'runTests'
