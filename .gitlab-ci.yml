@@ -11,7 +11,8 @@ stages:
 unit-test: 
   script: "-\"'d:'
   -'cd \"D:/Program\" Files\"/Unity/Editor/Unity\" '
-  -'batchmode' -'projectPath \"/D:/Github/testing/\"'
+  -'batchmode'
+  -'projectPath \"/D:/Github/testing/\"'
   -'runTests'
   -'testPlatform editmode'
   -'logFile'
