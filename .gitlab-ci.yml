@@ -9,12 +9,18 @@ stages:
     -build
     -deploy
 unit-test: 
-    script: "D:/Program\" Files\"/Unity/Editor/Unity
-        -batchmode \
-        -projectPath /D:/Github\testing" \
-        -runTests \
-        -logfile \
-        -testResults ./unit-tests.xml"
+    script:
+        -'d: cd "D:\Program Files\/Unity\Editor\"'
+        -'
+        .\Unity
+        -batchmode
+        -projectPath D:\Github\testing
+        -runTests
+        -testPlatform editmode
+        -logfile
+        -testResults
+        ./unit-tests.xml | Out-Default
+        '
     stage: test
     tags: 
         -unity
