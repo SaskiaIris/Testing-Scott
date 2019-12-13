@@ -15,7 +15,7 @@ unit-test:
     -runTests: \
     -testPlatform: "editmode" \
     -logfile: \
-    -testResults: "./unit-tests.xml" | Out-Default \
+    -testResults: "./unit-tests.xml"
   stage: test
   tags: 
     - unity
