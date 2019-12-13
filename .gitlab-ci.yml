@@ -9,7 +9,7 @@ stages:
   - build
   - deploy
 unit-test: 
-  script: "cd /d D:/Program' Files/Unity/Editor/Unity" \
+  script: "cd /d D:/Program Files/Unity/Editor/Unity" \
     -batchmode: \
     -projectPath: "D:/Github\testing" \
     -runTests: \
