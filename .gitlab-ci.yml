@@ -14,9 +14,9 @@ unit-test:
     -batchmode: \
     -projectPath: "D:/Github\testing" \
     -runTests: \
-    -testPlatform: editmode \
+    -testPlatform: "editmode" \
     -logfile: \
-    -testResults: ./unit-tests.xml | Out-Default \
+    -testResults: "./unit-tests.xml" | Out-Default \
   stage: test
   tags: 
     - unity
