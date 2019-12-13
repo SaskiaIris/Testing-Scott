@@ -3,9 +3,9 @@ stages:
   - build
   - deploy
 unit-test:
-  script: "D:\Program Files\Unity\Editor \
+  script: "D:/Program Files/Unity/Editor/ \
     -batchmode \
-    -projectPath D:\Github\testing \
+    -projectPath D:\Github/testing \
     -runTests -testPlatform editmode \
     -logFile \
     -testResults ./unit-tests.xml"
