@@ -11,7 +11,7 @@ stages:
 unit-test: 
   script:
     -d: cd "C:\Program' Files\Unity\Editor\Unity \
-    -batchmode \
+    -batchmode: \
     -projectPath D:\Github\testing\
     -runTests
     -testPlatform editmode
