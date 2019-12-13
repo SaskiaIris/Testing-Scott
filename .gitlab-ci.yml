@@ -4,7 +4,6 @@ stages:
   - deploy
 
 unit-test:
-  stage: test
   script: 'd:'
     -'cd "D:/Program Files/Unity/Editor/Unity" '
     -'batchmode'
@@ -13,6 +12,7 @@ unit-test:
     -'testPlatform editmode'
     -'logFile'
     -'testResults ./unit-tests.xml | Out-Default'
+  stage: test
   tags:
     - unity
 
