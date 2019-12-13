@@ -9,7 +9,7 @@ stages:
     -build
     -deploy
 unit-test: 
-    script: "d: D:/Program\" Files\"/Unity/Editor/Unity
+    script "d: D:/Program\" Files\"/Unity/Editor/Unity
         -batchmode \
         -projectPath "/D:/Github\testing" \
         -runTests \
@@ -17,7 +17,7 @@ unit-test:
         -testResults: ./unit-tests.xml"
     stage: test
     tags: 
-        - unity
+        -unity
 unity-build: 
     script: "echo 'Building...'"
     stage: build
