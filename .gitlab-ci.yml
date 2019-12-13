@@ -18,7 +18,7 @@ unit-test:
         -testPlatform editmode
         -logfile
         -testResults
-        ./unit-tests.xml | Out-Default
+        ./unit-tests.xml | Out-Default"
         '
     stage: test
     tags: 
