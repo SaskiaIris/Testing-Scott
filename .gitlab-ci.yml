@@ -10,7 +10,7 @@ stages:
     - deploy
 unit-test: 
     script:
-        - 'cd D:/Program\" Files/Unity/Editor/'
+        - 'cd D:/Program" Files/Unity/Editor/'
         - '
         -batchmode
         -projectPath D:\Github\testing
