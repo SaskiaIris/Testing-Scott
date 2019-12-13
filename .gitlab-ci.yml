@@ -14,7 +14,7 @@ unit-test:
         -projectPath "/D:/Github\testing" \
         -runTests \
         -logfile \
-        -testResults: ./unit-tests.xml"
+        -testResults ./unit-tests.xml"
     stage: test
     tags: 
         -unity
